@@ -1,2 +1,8 @@
 *.DS_Store
 *.DS_store
+node_modules
+*/node_modules
+*.json
+*/*.json
+*/example.js
+example.js
