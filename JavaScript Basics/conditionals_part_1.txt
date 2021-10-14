@@ -1,0 +1,3 @@
+My prediction is that lines 7, 15, and 19 will be output because the preceding conditional lines for each will be truthy. So 'Hello', 'World', '!' should be output.
+
+myString points to a string which is not empty, so it is truthy; however, since it's being negated on line 10, the overall conditional expression is falsey and thus line 11 will not be output.

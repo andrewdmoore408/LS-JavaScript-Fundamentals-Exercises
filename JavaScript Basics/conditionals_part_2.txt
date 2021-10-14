@@ -1,0 +1,7 @@
+5 possible paths are present in this code:
+
+condition1 and condition2
+condition1 not condition2 (else block is executed)
+not condition1 (else block)
+not condition1 and condition4 not condition5
+not condition1 and condition4 and condition5

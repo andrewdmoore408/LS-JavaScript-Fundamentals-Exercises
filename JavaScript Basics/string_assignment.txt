@@ -1,0 +1,5 @@
+This code will log 'Bob Bob'. 
+
+The invocation of toUpperCase() on line 3 doesn't mutate the string, and no reassignment takes place. Thus, both name and saveName reference the string 'Bob' and that's output twice.
+
+Further Exploration: All primitives have object wrappers available, which is why the primitive string value can invoke the String.prototype.toUpperCase() method.
