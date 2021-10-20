@@ -1,0 +1,5 @@
+1. I think this will output 'This is global.'
+
+2. This will output 'This is local.'
+
+3. This will output 'This is local.'

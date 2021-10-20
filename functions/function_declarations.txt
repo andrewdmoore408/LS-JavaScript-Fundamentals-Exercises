@@ -1,0 +1,9 @@
+This code will output 'Hello, world!'. 
+
+The function declaration and body will be hoisted above the invocation of logValue(), but its function body doesn't interact with or reference any variables declared outside its scope, so the hoisting  doesn't make a difference in this case.
+
+Further Exploration:
+
+This code should output 'string'. Function declarations are hoisted above variable declarations, and function names are assigned to variables.
+
+After the hoisted function declaration, var logValue is (first declared and then after that) assigned to the string 'foo'; thus, on the last line, logValue points to a string and that's what the invocation of typeof will return.

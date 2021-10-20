@@ -1,0 +1,5 @@
+This code will log undefined.
+
+EDIT: I was mistaken; this will output 'This is global'. My mistake was not properly considering where the function's being invoked. 
+
+Although the function declaration is hoisted above the variable declaration, the variable initialization to the string occurs before the function is invoked (and thus before whatever global variable myVar points to is output).

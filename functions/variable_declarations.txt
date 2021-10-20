@@ -1,0 +1,3 @@
+This will log undefined. The declaration of global variable a will be hoisted above the invocation of console.log, but it's not initialized to 1 until after that output occurs.
+
+If a had been declared using let or const, a ReferenceError would be raised since it would be in the Temporal Dead Zone, but since it was declared with var, it's implicitly assigned to undefined.

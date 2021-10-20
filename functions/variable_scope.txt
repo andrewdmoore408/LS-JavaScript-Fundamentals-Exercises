@@ -1,0 +1,3 @@
+This will output 'This is global'. Since the variable isn't being declared using let, const, or var, it has global scope and will be available throughout the program once someFunction() has been called and it's been initialized.
+
+NOTE: Technically, it's not exactly global scope--it's being bound to be a property of the global object.

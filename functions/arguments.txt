@@ -1,0 +1,13 @@
+1. This code will output 7.
+
+Inside the function definition, local variable b is assigned to the argument which was passed in; however, it is being reassigned inside the function. The value to which global variable a points to (7) is not changed.
+
+2. This code will also output 7. 
+
+The parameter named a in the function definition of myValue() is a local variable inside the function body, and it shadows the global variable a. If the parameter had a different name, global variable a could be reassigned inside the function, but in this case, the local variable is being reassigned and global variable a will continue to point to 7.
+
+3. This will log [1, 2, 10].
+
+Objects are mutable, and arrays are objects in JavaScript. When global variable a is passed to myValue(), a reference to the array it points to is passed to the function as an argument.
+
+Inside the function body, the element at index 2 is reassigned to its value plus 7, so the array which global variable a references is now [1, 2, 10], and that's what's output. 
