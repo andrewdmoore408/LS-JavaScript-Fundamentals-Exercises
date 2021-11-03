@@ -1,0 +1,3 @@
+The results of the comparisons in the example code are false because the arrays are different objects in memory. In JavaScript, strict equality with objects compares whether or not the objects are exactly the same (the same space in memory). 
+
+Since the array literals being compared with the return values of the oddities() function are not the same array, the comparisons return false.

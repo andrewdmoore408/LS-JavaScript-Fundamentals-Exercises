@@ -1,0 +1,3 @@
+Line 6 and line 10 both log [1, 2, 3]. On line 2, myOtherArray is initialized to point to the same array (the same place in memory) as myArray. After the call to pop() on line 4, the last element is removed from the array, so myOtherArray points to an array whose value is [1, 2, 3]. 
+
+On line 8, myArray is reassigned, so it no longer points to the same rray myOtherArray points to. Since that array hasn't been modified again, myOtherArray points to the same array on line 10 that it did on line 6. 
