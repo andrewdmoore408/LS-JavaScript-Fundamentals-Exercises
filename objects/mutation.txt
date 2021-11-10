@@ -1,0 +1,7 @@
+This code will output the same values initialized to array1 on line 1. This is because the elements of this array are string primitives and thus not references.
+
+When array2 is constructed by pushing each element from array1 into it, it's given primitive string values for its elements. These are not the same spaces in memory as array1, and thus the reassignment of each array1 element to its uppercase variant does not affect the items in memory which array2 point to.
+
+// Further exploration: if an object literal was pushed to array2, then any changes made to that object literal would be reflected in array2 since a reference to that place in memory would be part of array2.
+
+I would add another line assigning the value of array1[i] (after it's been reassigned to uppercase) to array2[i].

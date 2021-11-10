@@ -1,0 +1,4 @@
+The line should read:
+  return arguments[1] ? arguments[0] / 2 : 0;
+
+arguments is a special variable which is assigned to the arguments (in an array-like object) that was passed in whenever a function is invoked. In this case, index 1 points to the boolean and is being used in the ternary expression to determine whether or not the bonus applies. If it does, index 0 is used to access the salary that was passed in, and this value is divided by 2 to calculate the applicable bonus.

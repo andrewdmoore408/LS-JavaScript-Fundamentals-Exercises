@@ -1,0 +1,3 @@
+This code will log 'a' and then a ReferenceError will be raised since property '-1' has not been defined for the array which local variable myArray points to.
+
+NOTE: This is incorrect. undefined will be logged for properties which don't exist.

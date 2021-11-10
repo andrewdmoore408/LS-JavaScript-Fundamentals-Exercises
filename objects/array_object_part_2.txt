@@ -1,0 +1,1 @@
+The user's expectation is not correct. Although this code will go through the array as expected (including the two negative indices the user has defined), the length of the array is only 2. The negative indices the user defined are custom property names and not included in the array length, so the returned average will be 10, not 5.

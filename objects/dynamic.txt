@@ -1,0 +1,5 @@
+This code will output 678 and then 456.
+
+On line 7, local variable prop2 is assigned to the string '456', so on line 9, a property named '456' is initialized in myObject and its value is assigned to 678. This value is being output first when its key is referenced on line 11.
+
+Line 8 in this code reassigns the property named 'prop2' to '456', and so that's what's output after line 12.

@@ -1,0 +1,3 @@
+Without parentheses, the methods won't actually be invoked. I think the word "function" may be returned, or perhaps [function Object].
+
+// NOTE: Without parentheses, the code of the methods themselves will be returned. Parentheses must be appended to a function or method name if we wish to invoke it.

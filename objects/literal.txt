@@ -1,0 +1,3 @@
+The bug is in "myObject[a];" Without quotes inside the brackets, JS will try to find a variable named 'a' and will raise an error when it doesn't find it.
+
+Surrounding the a with quotes would fix this bug.

@@ -1,0 +1,11 @@
+The current result is that undefined is logged twice because the '-2' property name has not been defined on the array returned by the call to split() (which breaks the string that local variable string points to into individual words).
+
+To correctly access the penultimate word in the string, the function body could be changed to read as follows: 
+
+function penultimate(string) {
+  const words = string.split(' ');
+  
+  return words[words.length - 2];
+}
+
+To ensure that the number of words passed in is always at least 2, a guard clause could be added to validate the length, but as it is currently implemented, undefined will be returned if the string passed in has fewer than two words.
