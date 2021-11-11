@@ -1,0 +1,7 @@
+1. This will log 'The total value is 15'. The function declaration for function counter will be hoisted above the variable declarations, and thus counter will be reassigned to 5. Since 5 * 3 is 15, that will be interpolated into the string and then output.
+
+2. This will output 'The total value is NaN', because the rate variable has not yet been initialized when the counter * rate expression is evaluated and so rate will evaluate to undefined and the entire expression will evaluate to NaN.
+
+3. This will output 'The total value is 15'. The variable called counter will again be reassigned to 5 after the function declaration has been hoisted, and so 5 * 3 will evaluate to 15 and then be output using string interpolation.
+
+4. This will output a SyntaxError. A let/const variable and function name can't be the same.

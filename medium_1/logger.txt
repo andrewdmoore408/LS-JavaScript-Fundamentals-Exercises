@@ -1,0 +1,3 @@
+This code defines a function debugIt(), which contains a nested function definition named logger() within it. It also invokes that nested function at the end of its definition.
+
+Since the nested function invokes console.log and it has access to the local variable named status (which points to the string 'debugging'), 'debugging' is output once the debugIt() function is invoked, which happens on line 10 following its definition.

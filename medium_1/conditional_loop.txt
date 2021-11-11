@@ -1,0 +1,1 @@
+This code will result in an infinite loop where 0 is output ad infinitum. 0 % 3 is 0 and the value of i isn't reassigned in the if clause, so i will never be incremented.

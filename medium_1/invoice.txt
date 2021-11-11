@@ -1,0 +1,7 @@
+Rather than specifying an explicit number of arguments, rest syntax could be used to make a variadic paramter.
+
+Here's an example using rest syntax. This will add up an arbitrary number of arguments:
+
+function invoiceTotal(...amounts) {
+  return amounts.reduce((previousNum, currentNum) => previousNum + currentNum, 0);
+}

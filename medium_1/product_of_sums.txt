@@ -1,0 +1,5 @@
+This code will not produce its expected result.
+
+Since local variable sum isn't explicitly initialized, it will point to undefined, so attempting to reassign it to its own value plus a number will result in it being assigned to NaN.
+
+In addition, there's no explicit return at the end of the function body, so even if the sum were being calculated properly, it wouldn't be returned from the total function.
