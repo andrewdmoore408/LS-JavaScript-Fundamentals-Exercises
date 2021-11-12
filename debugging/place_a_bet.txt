@@ -1,0 +1,1 @@
+Because generateRandomInt() is wrapped in parentheses and a semicolon, it's becoming an anonymous function expression and is not available to be invoked on line 6. 

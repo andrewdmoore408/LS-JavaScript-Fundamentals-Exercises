@@ -1,0 +1,4 @@
+On line 21, catch is used without any parameter given to it to be assigned to the error message. 
+
+The line should read 
+} catch (error) {

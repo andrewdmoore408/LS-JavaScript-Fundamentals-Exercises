@@ -1,0 +1,3 @@
+The local variable currentPage is initialized to 1 each time read() is invoked. Since read() calls itself recursively until currentPage is equal to totalPages (which points to 364) and one invocation of read() isn't enough to meet this condition, read() will continue calling itself over and over and over without reaching a base case until the stack overflows.
+
+To fix this, the currentPage variable could be declared outside the read() function so that it's not always being assigned to 1 at the beginning of each invocation.

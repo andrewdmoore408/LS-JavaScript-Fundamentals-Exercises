@@ -1,0 +1,3 @@
+The local variable newSpecies is never reset at the beginning of each iteration, so after the first iteration, when it's assigned a truthy value (a string reading 'werewolf'), the if condition on line 21 is always true and thus console.log is invoked on every iteration. Since the length of the array global variable species points to is 6, 6 warnings are output instead of 3.
+
+// NOTE: Hoisting comes into play here--because the newSpecies variable is declared using var, it has function scope. Another option would be to use let to declare the variable so that it will not persist with a value after each iteration.

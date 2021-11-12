@@ -1,0 +1,7 @@
+I saw that there was an issue with the way the properties were being assigned to the object that team points to, but I didn't fully understand what was going on until looking at the solution.
+
+Because object keys are always strings, JavaScript will convert whatever's given to it as an object key to a string. Thus, when the variable names ceo, scrumMaster, and developer are used to assign object properties, JavaScript sees that those identifiers point to objects and uses the string representation of those objects to assign the key/value pair.
+
+The string representation of an object in JavaScript is [object Object], so what was happening under the hood is that one property with the string key of '[object Object]' was being assigned first to 'Kim', then to 'Alice', and finally to undefined on lines 22-24.
+
+To fix this issue, dot notation could be used, or quotes could be added around the keys 'ceo', 'scrumMaster', and 'developer' so that separate (and more descriptive) keys will be used to make separate properties on the object which team is pointing to.
