@@ -1,0 +1,13 @@
+This code will log:
+3
+4
+3
+5
+
+to the console.
+
+Arrays are objects in JavaScript (with some additional functionality added, but still objects). Their length property is always one integer higher than the number of elements they hold, and elements are represented as property values whose keys are automatically assigned as non-negative integers.
+
+Arrays can be given custom properties the same way other objects can in JavaScript, but those properties are not counted as part of the array.length.
+
+Thus, the object pointed to by global variable array will contain property pairs of { '3.4': 'Oranges' } and { '-2': 'Watermelon' }, but those pairs are not counted by the length property--nor are they iterable.

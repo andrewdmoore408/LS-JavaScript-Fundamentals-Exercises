@@ -1,0 +1,5 @@
+This code will log 40 and then 45. Since the totalPayable() function has access to the global variable startingBalance and its value is reassigned to 5 before the first function call and then 10 before the second, the return value of the function invocation changes.
+
+Since startingBalance was declared using let, it is able to be reassigned successfully. This code would not work if startingBalance had been declared using const.
+
+// NOTE: The reason the function has access to what startingBalance references is because of closure. The function retains access to the variables in its enclosing scope, and their values are resolved dynamically each time the function is called.

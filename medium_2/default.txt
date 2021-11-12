@@ -1,0 +1,5 @@
+Both solutions rely on the argument being truthy if passed in. It's possible for an item not to be taxed, for example, in which case the value should correctly be zero; however, if zero were passed in, it would be falsey, and thus the calculation returned would be incorrect since the tax would default to 0.15.
+
+A better solution would be to use default parameters, assigning default arguments to the parameters in question in case nothing is passed in; this way, defaults could be set without calculating things incorrectly.
+
+NOTE: Another option would be to explicitly test for undefined rather than relying on falsiness.

@@ -1,0 +1,26 @@
+This code will log:
+['JavaScript', 'Ruby', 'Python']
+3
+
+['JavaScript', 'Ruby', 'Python', <1 empty item>]
+4
+
+['JavaScript']
+1
+
+['JavaScript', <2 empty items>]
+3
+
+['JavaScript', <1 empty item>, 'Python']
+undefined
+3
+
+Depending on the runtime being used, the display of the empty items could vary a bit.
+
+The length property of an array can be used to expand or truncate an array. When the length is increased, empty items are added as needed to make the number of elements in the array equal to its length.
+
+If an array length is reassigned to be lower than the number of elements it contains, the array will be truncated and those elements will be deleted.
+
+When an empty item is logged, undefined is what is output.
+
+If an array element is assigned at an index higher than the current length, the length will be expanded to match the new highest index, and empty items will be filled in the extra space if and as needed.
